@@ -5,6 +5,7 @@
 body {
   font-family: 'Poppins', sans-serif;
   background-color: white;
+  margin-top: 0;
 }
 
 /* header */
@@ -147,26 +148,162 @@ li {
 }
 
 /* main-banner */
-.main-banner{
+.main-banner {
   padding-top: 180px;
   z-index: 999;
   position: relative;
-  
-}
-.container-fluid{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+
 }
 
-.inner-text{
+.container-fluid {
+  display: grid;
+  grid-template-columns: 700px 600px;
+  padding: 0 15px;
+}
+
+.inner-text {
   position: absolute;
+  top: 40%;
+  left: 10%;
+
+}
+
+.left-img {
+  width: 100%;
+  height: 90%;
+}
+
+.inner-heading {
+  color: #fff;
+  margin-top: -10px;
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.inner-text span {
+  color: #fff;
+  font-style: italic;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.main-btn {
+  font-size: 13px;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 15px;
+  background: transparent;
+  font-weight: 500;
+}
+
+.right-content {
+
+  padding: 15px 30px;
+  height: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+
+}
+
+.inner-right-text {
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   text-align: center;
+  align-items: center;
+  position: relative;
 }
-.left-img{
-  width: 100%;
+
+.women-right-img {
+  background-image: url("https://templatemo.com/templates/templatemo_571_hexashop/assets/images/baner-right-image-01.jpg");
+
+}
+
+.men-right-img {
+  background-image: url("https://templatemo.com/templates/templatemo_571_hexashop/assets/images/baner-right-image-02.jpg");
+
+}
+
+.kid-right-img {
+  background-image: url("https://templatemo.com/templates/templatemo_571_hexashop/assets/images/baner-right-image-03.jpg");
+
+}
+
+.accessories-right-img {
+  background-image: url("https://templatemo.com/templates/templatemo_571_hexashop/assets/images/baner-right-image-04.jpg");
+
+}
+.inner-right-heading{
+  margin: 0;
+  margin-bottom: 15px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+
+}
+.inner-right-para{
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+  font-style: italic;
+}
+.hover-content{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  background-color: rgba(42, 42, 42, 0.99);
+  text-align: center;
+  visibility: hidden;
+  transition: all ease 0.2s;
+  width: 90%;
   height: 90%;
+}
+.inner-right-text:hover .hover-content{
+  visibility: visible;
+}
+.hover-inner-heading {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  margin-top: 0;
+}
+
+.hover-inner-para {
+  color: #fff;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.hover-btn {
+  border: 1px solid #fff;
+  color: #fff;
+  font-size: 13px;
+  padding: 12px 25px;
+  background-color: transparent;
+}
+.hover-btn:hover {
+  background-color: #fff;
+  color: #2a2a2a;
+}
+@media (max-width:1000px){
+  .container-fluid{
+    grid-template-columns: 1fr;
+  }
+  .right-content{
+    grid-template-columns: 1fr;
+  }
+  .inner-right-text{
+    height: 100%;
+  }
 }
